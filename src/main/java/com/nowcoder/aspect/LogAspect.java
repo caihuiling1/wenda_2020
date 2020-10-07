@@ -14,7 +14,7 @@ import java.util.Date;
 @Component
 public class LogAspect {
     private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
-    @Before("execution(* com.nowcoder.controller.*Controller.*(..))")
+//    @Before("execution(* com.nowcoder.controller.*Controller.*(..))")
     public void beforeMethod(JoinPoint joinPoint) {
         StringBuilder sb = new StringBuilder();
         for (Object arg: joinPoint.getArgs()) {
